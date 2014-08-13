@@ -1,0 +1,413 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1em;
+    border: 0;
+    border-top: 1em solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Know Web Styles
+   ========================================================================== */
+
+*, 
+*:before, 
+*:after {
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.0.3');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@-webkit-keyframes Floating {
+    from {
+        -webkit-transform:translate(0, 0em);
+        max-width: 0;
+    }
+    25% {
+        -webkit-transform:translate(0, 0.4em);
+    }
+    50% {
+        -webkit-transform:translate(0, 0em);
+    }
+    51% {
+        text-shadow: 0em -1em 0em #C40300;
+    }
+    to {
+        -webkit-transform: translate(0, 0em);
+        text-shadow: 0em 0em 4em #C40300;
+        max-width: 1em;
+    }  
+}
+    
+@-moz-keyframes Floating {
+    from {
+        -moz-transform:translate(0, 0em);
+    }
+    50% {
+        -moz-transform:translate(0, 0.4em);
+    }
+    to {
+        -moz-transform: translate(0, 0em);
+    }    
+}
+
+@keyframes Floating {
+    from {
+        -moz-transform:translate(0, 0em);
+    }
+    50% {
+        -moz-transform:translate(0, 0.4em);
+    }
+    to {
+        -moz-transform: translate(0, 0em);
+    }    
+}
+
+@-webkit-keyframes Floating2 {
+    from {
+        -webkit-transform:translate(0, 0em);
+        max-width: 0;
+    }
+    25% {
+        -webkit-transform:translate(0, -0.4em);
+    }
+    50% {
+        -webkit-transform:translate(0, 0em);
+    }
+    51% {
+        text-shadow: 0em 1em 0em #C40300;
+    }
+    to {
+        -webkit-transform: translate(0, 0em);
+        text-shadow: 0em 0em 4em #C40300;
+        max-width: 1em;
+    }    
+}
+    
+@-moz-keyframes Floating2 {
+    from {
+        -moz-transform:translate(0, 0em);
+    }
+    50% {
+        -moz-transform:translate(0, -0.4em);
+    }
+    to {
+        -moz-transform: translate(0, 0em);
+    }    
+}
+
+@keyframes Floating2 {
+    from {
+        -moz-transform:translate(0, 0em);
+    }
+    50% {
+        -moz-transform:translate(0, -0.4em);
+    }
+    to {
+        -moz-transform: translate(0, 0em);
+    }    
+}
+
+/* ==========================================================================
+   Mobile 320em
+   ========================================================================== */
+
+body {
+    background-color: #222;
+}
+
+main {
+    position: relative;
+    width: 100%;
+}
+
+#globalBackToTop {
+    position: absolute;
+    display: none;
+    right: 5em;
+    text-align: center;
+    z-index: 1000;
+    -webkit-transition: top 0.5s;
+    -moz-transition: top 0.5s;
+    transition: top 0.5s;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+}
+
+#globalBackToTop a {
+    text-decoration: none;
+    color: #8f0000;
+    font-size: 2em;
+}
+
+#globalBackToTop a:before {
+    content: "\f0aa";
+    display: inline-block;
+    font-family: "FontAwesome";
+    background-color: #fff;
+    border-radius: 0.4em;
+    height: 0.7em;
+    line-height: 0.74em;
+}
+
+#knowTitle {
+    color: #00C403;
+    display: block;
+    font-size: 3.5em;
+    margin: 1em auto;
+    width: 5.85em;
+    -webkit-font-smoothing: antialiased;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    -webkit-transform-style: preserve-3d;
+}
+
+#knowTitle span {
+    display: block;
+    float: left;
+    -webkit-animation: Floating 2s 1 ease-in-out;
+    -moz-animation: Floating 2s 1 ease-in-out;
+    animation: Floating 4s 1 ease-in-out;
+    -webkit-font-smoothing: antialiased;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    -webkit-transform-style: preserve-3d;
+}
+
+#knowTitle span.time2 {
+    -webkit-animation: Floating2 2s 1 ease-in-out;
+    -moz-animation: Floating2 2s 1 ease-in-out;
+    animation: Floating2 4s 1 ease-in-out;  
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 640px) {
+
+    #knowTitle {
+        font-size: 5em;
+    }
+
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    main {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #knowTitle {
+        font-size: 7em;
+    }
+
+}
+
+@media only screen and (min-width: 900px) {
+
+    #knowTitle {
+        font-size: 8em;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    #knowTitle {
+        font-size: 10em;
+    }
+
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999em;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1em;
+    margin: -1em;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1em;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1em solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
